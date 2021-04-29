@@ -1,0 +1,19 @@
+name: caecrack
+version: "1.0"
+author: mksipe <https://github.com/mksipe/caecrack>
+about: caesar and ROT cryptography cracker. 
+args:
+    - wordlist:
+        short: w
+        long: wordlist
+        value_name: FILE
+        help: sets a wordlist to use.
+        takes_value: true
+        required: true
+    - cipher:
+        short: c
+        long: cipher
+        value_name: TEXT
+        help: sets a ciphertext to crack.
+        takes_value: true
+        required: true
