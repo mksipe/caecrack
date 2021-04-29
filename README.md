@@ -8,13 +8,34 @@ This program is intended to tell you the number of rotations rather than tell yo
 
 ## Installation
 
-Prerequisites:
+## Usage
 
-|system|cargo|
-|-|-|
-|cargo|clap|
-|wordlist|stdlib|
+### Standalone
 
----
+These set of instructions are to run this program once with cargo, then can be safely removed. 
 
+#### Installation
+
+1. `git clone https://github.com/mksipe/caecrack`
+2. `cd caecrack`
+3. `cargo run -- -h`
+> after usage
+4. `cd ..`
+5. `rm -r caecrack`
+
+
+### Built-in
+
+These set of instructions are to run this program periodically through the command line.
+
+#### Installation
+
+> You must be an administrator to be able to add public executables on Linux.
+
+1. `git clone https://github.com/mksipe/caecrack`
+2. `cd caecrack`
+3. `sudo chmod 700 Install.sh` 
+4. `sudo ./Install.sh`
+5. `cd .. `
+6. `rm caecrack -r  `
 
