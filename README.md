@@ -35,7 +35,7 @@ These set of instructions are to run this program periodically through the comma
 1. `git clone https://github.com/mksipe/caecrack`
 2. `cd caecrack`
 3. `sudo chmod 700 Install.sh` 
-4. `sudo ./Install.sh`
+4. `sudo ./install.sh`
 5. `cd .. `
 6. `rm caecrack -r  `
 
