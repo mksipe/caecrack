@@ -11,9 +11,9 @@ elif [ $(/usr/bin/id -u) -eq 0 ]; then
         printf "Compiling binaries...\n" 
         cargo build
         cp target/debug/caecrack /usr/bin/ > /dev/null
-       	if [ $(which hts4 > /dev/null; echo $?) -eq 0 ]; then
+       	if [ $(which caecrack > /dev/null; echo $?) -eq 0 ]; then
 		printf "`caecrack -V`, has been installed.\n"
-	elif [ $(which hts4 > /dev/null; echo $?) -ne 0 ]; then
+	elif [ $(which caecrack > /dev/null; echo $?) -ne 0 ]; then
 		printf "caecrack could not be installed.\n"
 	fi
     fi
