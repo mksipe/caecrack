@@ -54,6 +54,7 @@ fn caesar_crack (word:&str, list:&str) {
 
 }
 }
+
 #[cfg(test)]
 mod tests {
     use super::*;
