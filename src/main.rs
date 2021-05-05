@@ -54,3 +54,116 @@ fn caesar_crack (word:&str, list:&str) {
 
 }
 }
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_rot_0() {
+        assert_eq!(caesar("test",0), "test");
+    }
+    #[test]
+    fn test_rot_1() {
+        assert_eq!(caesar("test",1), "uftu");
+    }
+    #[test]
+    fn test_rot_2() {
+        assert_eq!(caesar("test",2), "vguv");
+    }
+    #[test]
+    fn test_rot_3() {
+        assert_eq!(caesar("test",3), "whvw");
+    }
+    #[test]
+    fn test_rot_4() {
+        assert_eq!(caesar("test",4), "xiwx");
+    }
+    #[test]
+    fn test_rot_5() {
+        assert_eq!(caesar("test",5), "yjxy");
+    }
+    #[test]
+    fn test_rot_6() {
+        assert_eq!(caesar("test",6), "zkyz");
+    }
+    #[test]
+    fn test_rot_7() {
+        assert_eq!(caesar("test",7), "alza");
+    }
+    #[test]
+    fn test_rot_8() {
+        assert_eq!(caesar("test",8), "bmab");
+    }
+    #[test]
+    fn test_rot_9() {
+        assert_eq!(caesar("test",9), "cnbc");
+    }
+    #[test]
+    fn test_rot_10() {
+        assert_eq!(caesar("test",10), "docd");
+    }
+    #[test]
+    fn test_rot_11() {
+        assert_eq!(caesar("test",11), "epde");
+    }
+    #[test]
+    fn test_rot_12() {
+        assert_eq!(caesar("test",12), "fqef");
+    }
+    #[test]
+    fn test_rot_13() {
+        assert_eq!(caesar("test",13), "grfg");
+    }
+    #[test]
+    fn test_rot_14() {
+        assert_eq!(caesar("test",14), "hsgh");
+    }
+    #[test]
+    fn test_rot_15() {
+        assert_eq!(caesar("test",15), "ithi");
+    }
+    #[test]
+    fn test_rot_16() {
+        assert_eq!(caesar("test",16), "juij");
+    }
+    #[test]
+    fn test_rot_17() {
+        assert_eq!(caesar("test",17), "kvjk");
+    }
+    #[test]
+    fn test_rot_18() {
+        assert_eq!(caesar("test",18), "lwkl");
+    }
+    #[test]
+    fn test_rot_19() {
+        assert_eq!(caesar("test",19), "mxlm");
+    }
+    #[test]
+    fn test_rot_20() {
+        assert_eq!(caesar("test",20), "nymn");
+    }
+    #[test]
+    fn test_rot_21() {
+        assert_eq!(caesar("test",21), "ozno");
+    }
+    #[test]
+    fn test_rot_22() {
+        assert_eq!(caesar("test",22), "paop");
+    }
+    #[test]
+    fn test_rot_23() {
+        assert_eq!(caesar("test",23), "qbpq");
+    }
+    #[test]
+    fn test_rot_24() {
+        assert_eq!(caesar("test",24), "rcqr");
+    }
+    #[test]
+    fn test_rot_25() {
+        assert_eq!(caesar("test",25), "sdrs");
+    }
+    #[test]
+    fn test_rot_26() {
+        assert_eq!(caesar("test",26), "test");
+    }
+}
