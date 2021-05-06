@@ -6,9 +6,17 @@ This program is intended to tell you the number of rotations rather than tell yo
 
 ---
 
-## Installation
+
 
 ## Usage
+
+To use the program, a ciphertext and a wordlist are required. Whether you use a sentence or a phrase, the program will only attempt to crack the first word. 
+
+ie. `caecrack -c "test" -w /usr/share/wordlists/wordlist.txt` 
+
+Be careful, as anything that is not UTF-8 rust will, by default, panic the program. 
+
+## Installation
 
 ### Standalone
 
@@ -34,7 +42,7 @@ These set of instructions are to run this program periodically through the comma
 
 1. `git clone https://github.com/mksipe/caecrack`
 2. `cd caecrack`
-3. `sudo chmod 700 Install.sh` 
+3. `sudo chmod 700 install.sh` 
 4. `sudo ./install.sh`
 5. `cd .. `
 6. `rm caecrack -r  `
