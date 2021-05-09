@@ -3,6 +3,7 @@ extern crate clap;
 use clap::App;
 use std::io::BufRead;
 use std::io::BufReader;
+
 fn main() {
     let yaml = load_yaml!("../src/cli.yaml");
     let matches = App::from_yaml(yaml).get_matches();
@@ -33,7 +34,7 @@ fn caesar_crack (word:&str, list:&str) {
 
     let file = std::fs::File::open(&list).unwrap();
     let reader = BufReader::new(file);
-    println!("{}", "Cracking... ");
+    print!("{}", "Cracking... ");
     for i in reader.lines().enumerate() {
     let word = word.split_whitespace().next().unwrap_or("");
     let word = &word.to_lowercase();
@@ -42,13 +43,14 @@ fn caesar_crack (word:&str, list:&str) {
     let out:[&bool; 26] = [&poss[0].eq(&i),&poss[1].eq(&i),&poss[2].eq(&i),&poss[3].eq(&i),&poss[4].eq(&i),&poss[5].eq(&i),&poss[6].eq(&i),&poss[7].eq(&i),&poss[8].eq(&i),&poss[9].eq(&i),&poss[10].eq(&i),&poss[11].eq(&i),&poss[12].eq(&i),&poss[13].eq(&i),&poss[14].eq(&i),&poss[15].eq(&i),&poss[16].eq(&i),&poss[17].eq(&i),&poss[18].eq(&i),&poss[19].eq(&i),&poss[20].eq(&i),&poss[21].eq(&i),&poss[22].eq(&i),&poss[23].eq(&i),&poss[24].eq(&i),&poss[25].eq(&i)];
     let out = out.iter().enumerate();
     for i in out {
+
         match &i.1 {
             true  => println!("Found: {} Rotations", &i.0),
-            false => print!("{}", "" ),
+            false => continue,
         }
         match &i.1 {
             true  => (std::process::exit(0)),
-            false => print!("{}", "" ),
+            false => continue,
         }
     }  
 
