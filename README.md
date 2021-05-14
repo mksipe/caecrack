@@ -16,6 +16,14 @@ ie. `caecrack -c "test" -w /usr/share/wordlists/wordlist.txt`
 
 Be careful, as anything that is not UTF-8 rust will, by default, panic the program. 
 
+## Supported OS
+
+|OS|Badge|
+|-|-|
+|windows|[![Windows-Latest](https://github.com/mksipe/caecrack/actions/workflows/Windows-Latest.yml/badge.svg?branch=main)](https://github.com/mksipe/caecrack/actions/workflows/Windows-Latest.yml)|
+|Linux|[![Ubuntu-Latest](https://github.com/mksipe/caecrack/actions/workflows/Linux-Latest.yml/badge.svg)](https://github.com/mksipe/caecrack/actions/workflows/Linux-Latest.yml)|
+|MacOS|[![MacOS-latest](https://github.com/mksipe/caecrack/actions/workflows/MacOS-Latest.yml/badge.svg)](https://github.com/mksipe/caecrack/actions/workflows/MacOS-Latest.yml)|
+
 ## Installation
 
 ### Standalone
