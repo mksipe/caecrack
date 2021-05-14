@@ -1,4 +1,4 @@
-name: macos-latest
+name: MacOS-latest
 on:
   push:
     branches: [ main ]
