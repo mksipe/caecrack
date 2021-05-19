@@ -9,7 +9,7 @@ elif [ $(/usr/bin/id -u) -eq 0 ]; then
     elif [ $(which cargo > /dev/nulll; echo $?) -eq 0 ]; then
         printf "Making installation.\n"
         printf "Compiling binaries...\n" 
-        cargo build
+        cargo build --release
         cp target/debug/caecrack /usr/bin/ > /dev/null
        	if [ $(which caecrack > /dev/null; echo $?) -eq 0 ]; then
 		printf "`caecrack -V`, has been installed.\n"
